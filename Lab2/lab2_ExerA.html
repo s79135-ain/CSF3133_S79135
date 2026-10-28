@@ -1,0 +1,173 @@
+<!-- html structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- A <header> containing an <h1> with the event name and a short tagline. -->
+   <title> UMT Career day Event!</title>
+   </head>
+   <header>
+     <h1>Career Day UMT</h1>
+     <p><em>Explore Today, Lead Tomorrow</em></p>
+</header>
+
+<!-- A <nav> with internal links (e.g. href="#schedule", href="#register", href="#about") that jump to
+each section of the page. -->
+<nav>
+<a href="#schedule">Schedule</a>|
+<a href="#register">Register</a>|
+<a href="#about">About</a>
+</nav>
+<!-- At least three <section> elements, each with an id: About the Event, Event Schedule and
+Registration. -->
+
+<section id="about">
+<h2>About Our Career Day</h2>
+<article>
+<h2>Our Speaker Of The Day!</h2>
+<p>Dr.Nur Aisyah Rahman - Software Engineering Expert</p>
+</article>
+
+<article>
+<h3>Interesting Activites!</h3>
+<p><strong>Mock Job Interview </strong></p>
+<p>Participants will take part in a simulated job interview to practice answering interview questions and improve their communication skills.</p>
+</article>
+</section>
+
+<!-- Event schedule -->
+<section id="schedule">
+<h3>Event Schedule</h3>
+<!-- A <footer> with the organiser name and a copyright line using &copy; -->
+<table border ="1">
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Venue</th>
+<th>Person in Charge</th>
+</tr>
+
+<!-- 6 activities during the Career Day -->
+<!-- Activity 1 -->
+<tr>
+<td>8:00 - 8:30 AM</td>
+<td>Registeration & Opening Ceremony</td>
+<td rowspan="2">Main Hall Lobby</td>
+<td>Nurul Aina</td>
+</tr>
+<!-- Activity 2 -->
+<tr>
+<td>9:00 - 11:00AM</td>
+<td>Talk by Dr.Nur Aisyah Rahman</td>
+<td>Asna Syamimi</td>
+</tr>
+
+<!-- Activity 3 -->
+<tr>
+<td>11:00AM-12:30PM</td>
+<td>Career Exhibition</td>
+<td>Exhibition Hall</td>
+<td>Damia Farhana</td>
+</tr>
+
+<!-- Activity 4 -->
+<tr>
+<td>12:30-1:30PM</td>
+<td colspan="3">Lunch & Prayer Break</td>
+</tr>
+
+<!-- Activity 5 -->
+<tr>
+<td>1:30 - 3:00PM</td>
+<td>Mock Job Interview</td>
+<td>Seminar Room</td>
+<td>Sharifah Husna</td>
+</tr>
+
+<!-- Activity 6 -->
+<tr>
+<td>3:00 - 5:00PM</td>
+<td>Career Games, Lucky Draw and Closing Ceremony</td>
+<td>Activity Hall & Main Hall</td>
+<td>Khairyl Muhaimin</td>
+</tr>
+</table>
+</section>
+<!-- Create a form with action="register.html" and method="post"  -->
+
+<section id="register">
+<h2>Registration</h2>
+<form action ="register.html" method="post">
+<label for ="fname"> Full Name: </label>
+<input type="text" id="fname" name="fullName"><br>
+<label for ="matricNo"> Matric Number: </label>
+<input type="text" id="matricNo" name="matricNumber"><br>
+<label for ="email"> E-mail: </label>
+<input type="text" id="email" name="email"><br>
+
+<label for ="year1">Year Of Study: </label>
+<input type="radio" id="year1" name="yearStudy" value="year1">
+<label for ="year1">Year 1 </label>
+<input type="radio" id="year2" name="yearStudy" value="year2">
+<label for ="year2">Year 2 </label>
+<input type="radio" id="year3" name="yearStudy" value="year3">
+<label for ="year3">Year 3 </label>
+<input type="radio" id="year4" name="yearStudy" value="year4">
+<label for ="year4">Year 4 </label>
+
+<br><br>
+<label for ="session1">Session To Join: </label><br>
+<label for ="session1">Talk by Dr.Nur Aisyah Rahman</label>
+<input type="checkbox" id="session1" name="session" value="session1"><br>
+<label for ="session2">Career Exhibition</label>
+<input type="checkbox" id="session2" name="session" value="session2"><br>
+<label for ="session3">Mock Job Interview</label>
+<input type="checkbox" id="session3" name="session" value="session3"><br>
+<label for ="session4">Career Games, Lucky Draw and Closing Ceremony</label>
+<input type="checkbox" id="session4" name="session" value="session4"><br><br>
+
+<label for ="faculty">Faculty: </label>
+<select id ="faculty" name="faculty">
+<option value="fskm">Faculty Science computer and Mathematics</option>
+<option value="fim">Faculty Informatic Maritim</option>
+<option value="fft">Faculty Food Technologys</option>
+<option value="fmc">Faculty Mobile Computing</option>
+</select>
+
+<input type="submit" value="Submit"><br><br>
+</form>
+</section>
+
+<!-- A <footer> with the organiser name and a copyright line using &copy; -->
+<footer>
+<p>Organized by UMT Student Commitee &copy; 2026 Career Day</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
