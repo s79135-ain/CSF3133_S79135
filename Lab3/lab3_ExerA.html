@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Course Feedback</title>
+</head>
+<body>
+<!-- Header Section -->
+<!-- In the header, display the bakery name using <h1>, and use a <span> inside the <h1>
+for a short slogan. -->
+<div id="header">
+<header>
+ 	<h1>SweetLicious Bakery</h1>
+	<span>Your sweet pause </span> 
+	</header>
+</div>
+<!-- Navigation Section -->
+<!-- In the nav, create at least three inline links (<a>) separated by “ | ” -->
+<div id="nav">
+
+	<a href ="price"> Price List</a>|<a href ="form">Form to Order</a>|
+	<a href ="totalprice">Total Price</a>
+</div>
+
+<!-- Content Section -->
+<!-- In the content section, write an introduction paragraph (<p>) that contains at least
+three different inline elements, e.g. <strong>, <em>, <span> and <a>.Use at least three different block elements in the page (e.g. <h2>, <p>, <ul>, <div>). -->
+
+<div id="content">
+<h2> Know deeper about us! </h2>
+<p><strong>Welcome to SweetLicious Bakery!</strong> Here, we craft delicious artisan breads, flaky pastries and premium cakes made from scratches using the finest ingredients.Stop by today to enjoy the warm aroma and <em>taste the love in every bite.</em><br>
+<span>Where happiness is baked fresh everyday.</span></p>
+
+<!-- list of menu bakery-->
+<h2>Menu</h2>
+<ul>
+    <li>Signature Chocolate Croissant</li>
+    <li>Red Velvet Cake</li>
+    <li>Golden Butter Cookies</li>
+    <li>Cupcakes </li>
+    <li>Cake Slices</li>
+</ul>
+
+<!-- from for customer order -->
+<h3>Order Form</h3>
+<form oninput="TotalPrice.value = (Number(Cupcakes.value) * 3.00 + Number(CakeSlices.value) * 5.00).toFixed(2);">
+<label for="custname">Name:</label><br>
+            <input type="text" id="custname" name="custname" autofocus required><br><br>
+<label for="custtel">No. Tel:</label><br>
+            <input type="tel" id="custtel" name="custtel" required><br><br>
+<label for="custemail">Email:</label><br>
+            <input type="email" id="custemail" name="custemail" required><br><br>
+<label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+<label for="time">Time:</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+
+<!-- topping flavour to choose -->
+<p>
+<label for="flavour">Select topping flavour:</label>
+<input type = "text" id="flavour" name="flavour" list="flavourchoice" placeholder="Click for flavour..">
+<datalist id ="flavourchoice">
+<option value ="Chocolate">
+<option value ="Strawberry">
+<option value ="Pistachio">
+<option value ="Oreo Cookies">
+<option value ="Yam">
+</datalist>
+</p>
+
+<!-- icing colour to choose -->
+<p>
+<label for="icingcolour">Icing colour: </label>
+<input type="color" id="icingcolour" name="icingcolour" value ="#FFC0CB">
+</p>
+
+<!-- sweetness to choose -->
+<p>
+<label for="sweetness">Sweetness: </label>
+<input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1" value ="3">
+</p>
+
+<!-- Price Calculator (<output>) -->
+<p>
+<label for="Cupcakes">Cupcakes (RM 3.00 each)</label>
+<input type="number" id="Cupcakes" name="Cupcakes" min="0" value="0">
+</p>
+<p>
+<label for="CakeSlices">Cake Slices (RM 5.00 each)</label>
+<input type="number" id="CakeSlices" name="CakeSlices" min="0" value="0">
+</p>
+<p>
+Total Price = RM
+<output name="TotalPrice" for="Cupcakes CakeSlices">0.00</output>
+</p>
+
+<!-- A submit button. -->
+<p>
+<input type="submit" value="Submit">
+</p>
+
+</form>
+</div>
+
+<!-- sidebar -->
+<div id="sidebar">
+<h2>Price List</h2>
+<ul>
+    <li>Signature Chocolate Croissant --- RM10.00</li>
+    <li>Red Velvet Cake --- RM15.00</li>
+    <li>Golden Butter Cookies --- RM8.00</li>
+    <li>Cupcakes --- RM3.00</li>
+    <li>Cake Slices --- RM5.00</li>
+
+</ul>
+<p> Orders &gt; 10 pieces get a free drink! </p>
+</div>
+
+<!-- footer -->
+<div id="footer">
+<p>SweetLiciousBakery&reg; &nbsp; Collaboration with Beryl's&copy;
+</div>
