@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Ticket - Campus Cinema</title>
+</head>
+<body>
+<!-- Error 1 (Line 1): Missing html in DOCTYPE. Corrected to <!DOCTYPE html>. -->
+<!-- Error 2 (Line 9): Incorrect placement of closing tags for <span> and <h1>. Corrected the closing tag order. -->
+<!-- Error 3 (Line 11): Used <span> to contain block elements. Changed <span> to <div>. -->
+<!-- Error 4 (Line 13): Missing semicolon in &amp; and raw less-than symbol. Corrected using &amp; and &lt;. -->
+<!-- Error 5 (Line 14): Total calculation used string addition. Corrected using Number() for numerical calculation. -->
+<!-- Error 6 (Line 18): Incorrect input type "emial". Corrected to type="email" and added required. -->
+<!-- Error 7 (Line 22 and 23): Incorrect datalist connection. Changed list="movies" and id="movies". -->
+<!-- Error 8 (Line 28 and 30): Missing min="0" in ticket inputs. Added min="0". -->
+<!-- Error 9 (Line 32): Incorrect range values. Changed min="5" max="1" to min="1" max="5". -->
+<!-- Error 10 (Line 33): Incorrect output for attribute. Corrected to for="adult child". -->
+<!-- Error 11 (Line 38): Incorrect entity &Copy;. Corrected to &copy;. -->
+<!-- Error 12 (Line 41 and extra closing tags): Removed duplicate closing tags. Kept only one </body> and </html>. -->
+
+<div id="header">
+	<h1>e-Ticket <span>Your Campus Cinema</span></h1>
+	<p>Book your favourite campus movie today!</p>
+</div>
+<div id="content">
+	<h2>Book Your Ticket</h2>
+	<p>Promotion: tickets &lt; RM10 for students &amp; staff on selected offers!
+	</p>
+
+<form action="#" method="get"
+oninput=" this.elements['total'].value = Number(this.elements['adult'].value) +
+            Number(this.elements['child'].value);
+
+this.elements['price'].value =(Number(this.elements['adult'].value) * 12 +
+            Number(this.elements['child'].value) * 8).toFixed(2);">
+
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0123456789" required>
+            </p>
+            <p>
+                <label for="date">Show Date:</label>
+                <input type="date" id="date" name="date">
+            </p>
+            <p>
+                <label for="showTime">Show Time:</label>
+                <input type="time" id="showTime" name="showTime">
+            </p>
+
+            <p>
+                <label for="movie">Movie:</label>
+                <input type="text" id="movie" name="movie" list="movies" placeholder="Choose a movie">
+                <datalist id="movies">
+                    <option value="Kuyank">
+                    <option value="Surviving Hurricane Otis">
+                    <option value="Cerita Lila">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="adult">
+                    Adult Tickets (RM 12 each):
+                </label>
+                <input type="number" id="adult" name="adult" min="0" value="0">
+            </p>
+
+            <p>
+                <label for="child">
+                    Child Tickets (RM 8 each):
+                </label>
+                <input type="number" id="child" name="child" min="0" value="0">
+            </p>
+
+            <p>
+                <label for="rating">
+                    Rate Our Service (1 - 5):
+                </label>
+                <input type="range" id="rating" name="rating" min="1" max="5" step="1" value="3">
+            </p>
+
+            <p>
+                Total Tickets:
+                <output name="total" for="adult child">0</output>
+            </p>
+
+            <p>
+                Total Price: RM
+                <output name="price" for="adult child">0.00</output>
+            </p>
+
+            <p>
+                <button type="submit">Book Now</button>
+                <button type="reset">Clear Form</button>
+            </p>
+
+        </form>
+
+    </div>
+
+    <div id="sidebar">
+        <h2>Now Showing</h2>
+        <ul>
+            <li>
+                <strong>Kuyank</strong>
+                <span>(PG)</span>
+                <a href="https://youtu.be/z3ElDl-IWmc?si=_-dHAFkcvhiu4EsV"
+                target="_blank">Watch Trailer</a>
+            </li>
+            <li>
+                <strong>Surviving Hurricane Otis</strong>
+                <span>(U)</span>
+                <a href="https://youtu.be/qC0HZLUXRXw?si=zhvjdKpIDL41jqG8"
+                target="_blank">Watch Trailer</a>
+            </li>
+            <li>
+                <strong>Cerita Lila</strong>
+                <span>(PG)</span>
+                <a href="https://youtu.be/kY2XUULjXPo?si=APjLmbnN2wm_dtnr"
+                target="_blank"> Watch Trailer </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="footer">
+        <p>
+            e-Ticket&reg; &ndash; Campus Cinema
+            &lt; RM10 every Tuesday.
+        </p>
+        <p>Terms &amp; Conditions apply.</p>
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+
+    </div>
+
+</body>
+</html>
