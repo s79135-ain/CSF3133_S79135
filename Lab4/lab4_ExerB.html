@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Error List:
+    1. Changed list-style-type: no to none.
+    2. Corrected the order of link states.
+    3. Changed overlined to overline.
+    4. Added missing colon after color.
+    5. Added dot to the highlight class selector.
+    6. Added missing closing braces in CSS.
+    7. Added id="menu" and href="#menu".
+    8. Added video source and controls.
+    -->
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction -->
+    <section id="intro">
+        <p>Welcome to e-Café Campus. Enjoy our delicious food and drinks every day!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p>Freshly brewed coffee and local delights every day.</p>
+
+        <h3>Kopi Tarik</h3>
+        <p>
+            <span class="old-price">RM 4.50</span>
+            <span class="highlight">RM 3.50</span>
+        </p>
+
+        <h3>Nasi Lemak</h3>
+        <p>
+            <span class="old-price">RM 6.00</span>
+            <span class="highlight">RM 5.00</span>
+        </p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Discover more about e-Café Campus.</figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <br><br>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+
+            <br><br>
+
+            <label>Visit Type:</label><br>
+            <input type="radio" name="visit" value="Dine-in"> Dine-in
+            <input type="radio" name="visit" value="Take-away"> Take-away
+
+            <br><br>
+
+            <label>Favourite Items:</label><br>
+            <input type="checkbox" name="favourite" value="Kopi Tarik"> Kopi Tarik
+            <input type="checkbox" name="favourite" value="Nasi Lemak"> Nasi Lemak
+            <input type="checkbox" name="favourite" value="Tea"> Tea
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 e-Café Campus</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:ecafe@campus.com">ecafe@campus.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
