@@ -1,0 +1,110 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbffef;
+    color: black;
+    margin: 0;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    text-decoration: overline;
+}
+
+/* Section Headings */
+h2 {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Link States */
+a:link {
+    color: darkblue;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: orange;
+}
+
+/* Destinations */
+#destinations {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Destination Cards */
+.card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid lightblue;
+}
+
+/* Promotion Prices */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
+/* Center Content */
+.center {
+    text-align: center;
+}
+
+/* Video */
+#video {
+    padding: 10px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Registration Form */
+.trip-form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+    width: 80%;
+    margin: auto;
+}
+
+/* Form Inputs */
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+}
+
+/* Submit Button */
+button {
+    padding: 8px 15px;
+    background-color: lightblue;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+}

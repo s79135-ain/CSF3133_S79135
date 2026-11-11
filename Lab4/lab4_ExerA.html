@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Terengganu Trip Paradise</title>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Internal CSS -->
+<style>
+    header {
+    background-color: skyblue;
+    padding: 20px;
+    }
+
+    #trip {
+    background-color: #FFDFD3;
+    }
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+<h1>TRIP TO TERENGGANU!</h1>
+</header>
+
+<!-- Navigation Section -->
+<nav>
+<ul>
+	<li><a href="#destinations">Destinations</a></li>
+	<li><a href="#video">Promo Video</a></li>
+	<li><a href="#trip">Trip Registration</a></li>
+</ul>
+</nav>
+
+<!-- Destinations Section -->
+<section id ="destinations">
+	<h2>Check out Terengganu hot spot!</h2>
+<!-- Pulau Kapas -->
+<article class="card">
+	<h2>Pulau Kapas The Crystal Clear Paradise</h2>
+		<p>A serene tropical island famous for its clear waters, 		white sandy beaches, and vibrant coral reefs located just 		minutes from the mainland.</p>
+<p>Price: <span class="old-price">RM 299</span>
+<span class="new-price">RM 199</span></p>
+</article>
+
+<!-- Pulau Redang -->
+<article class="card">
+	<h2>Pulau Redang Underwater Wonderland</h2>
+		<p>A premier holiday destination known for its turquoise 		sea, luxury beachfront resorts, and rich marine life ideal 		for snorkeling.</p>
+		<p>Price: <span class="old-price">RM 399</span>
+		<span class="new-price">RM 299</span></p>
+</article>
+
+<!-- Pulau Perhentian -->
+<article class="card">
+<h2>Pulau Perhentian Where Adventure Meets Paradise</h2>
+	<p>
+	A popular island getaway featuring scenic viewpoints, crystal-	clear bays, and diverse sea life perfect for diving 	enthusiasts.
+	</p>
+	<p>Price: <span class="old-price">RM 499</span>
+	<span class="new-price">RM 399</span></p>
+</article>
+
+<!-- Seats Availability -->
+<p>Seats filled: <meter min="0" max="40" value="28">28 out of 40</meter></p>
+</section>
+
+<!-- Video Section -->
+<section id="video" class="center">
+            <h2>Explore Terengganu Islands</h2>
+            <figure>
+                <video width="600" height="340" controls>
+                    <source src="terengganu.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Terengganu beautiful places with crystal-clear 		water and pearl sands of Pulau Kapas, Pulau Redang and 			Pulau Perhentian.</figcaption>
+            </figure>
+        </section>
+
+<!-- Trip Register Section -->
+<section id ="trip">
+    <h2>Plan Your Trip With Us!</h2>
+
+    <form class="trip-form">
+	<!-- Personal Information of Customer -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+	<!-- Traveller Type -->
+        <p>Traveller Type:</p>
+        <input type="radio" id="student" name="traveller" value="Student">
+        <label for="student">Student</label><br>
+
+        <input type="radio" id="staff" name="traveller" value="Staff">
+        <label for="staff">Staff</label><br>
+
+        <input type="radio" id="public" name="traveller" value="Public">
+        <label for="public">Public</label><br><br>
+
+        <!-- Interests -->
+        <p>Interests:</p>
+        <input type="checkbox" id="islands" name="interest" value="Islands">
+        <label for="islands">Islands</label><br>
+
+        <input type="checkbox" id="food" name="interest" value="Food">
+        <label for="food">Food</label><br>
+
+        <input type="checkbox" id="culture" name="interest" value="Culture">
+        <label for="culture">Culture</label><br>
+
+        <input type="checkbox" id="nature" name="interest" value="Nature">
+        <label for="nature">Nature</label><br><br>
+
+<!-- Submit Button -->
+<button type="submit">Submit</button>
+
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p class="center">&copy; 2026 Terengganu Island Trip</p>
+</footer>
+
+</body>
+</html>
