@@ -1,0 +1,144 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF9F0;
+    color: #444444;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #FFD6BA;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Heading */
+h1 {
+    color: #A64B2A;
+    text-decoration: overline;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #A8DCC8;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    background-color: #A8DCC8;
+    color: #315B4A;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    background-color: #FFE28A;
+    color: #8A4B20;
+}
+
+/* Link States */
+a:link {
+    color: #287A75;
+}
+
+a:visited {
+    color: #9460A8;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/* Introduction */
+#intro {
+    font-size: 18px;
+    background-color: #FFF0C2;
+    padding: 15px;
+}
+
+/* Paragraph */
+p {
+    color: #444444;
+    text-align: justify;
+}
+
+/* Menu Section */
+#menu {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Old Price */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* New Price */
+.highlight {
+    font-weight: bold;
+    color: #E65B50;
+}
+
+/* Video Section */
+#video {
+    text-align: center;
+    padding: 15px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Feedback Form */
+.feedback-form {
+    background-color: #FFFFFF;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #FFD6BA;
+}
+
+/* Form Inputs */
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+}
+
+/* Submit Button */
+button {
+    background-color: #FFB978;
+    color: #55351F;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #FFD6BA;
+    padding: 15px;
+    text-align: center;
+}
