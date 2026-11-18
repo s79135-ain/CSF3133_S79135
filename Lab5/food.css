@@ -1,0 +1,91 @@
+main {
+    padding: 20px 40px;
+}
+body {
+    background-color: #FBF7F0;
+}
+
+header {
+background-image: url("background.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: #FDEBD0;
+padding: 75px 20px;
+text-align: center;
+min-height: 100px;
+text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+font-family: Arial;
+color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; 
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color during hover */
+nav ul li a:hover {
+	background-color:#E67E22;
+	color: #FBF7F0;
+}
+nav ul li a:active {
+color: #EFE6D8;
+}
+
+#menuTable {
+border-collapse: collapse;
+width: 100%;
+}
+#menuTable td, #menuTable th{
+border: 1px solid #ddd;
+padding: 8px;
+}
+#menuTable tr:nth-child(2),
+#menuTable tr:nth-child(6){
+ background-color:#F2F2F2;
+}
+#menuTable tr:nth-child(4){
+ background-color:#FDEBD0;
+}
+#menuTable th{
+padding-top: 12px;
+text-transform: uppercase;
+padding-bottom: 12px;
+text-align: center;
+background-color:#E67E22;
+color: white;
+}
+
+#menuTable td:last-child{
+text-align: right;
+}
+
+
+#about h2,
+#menu h2{
+    font-family: Arial, sans-serif;
+    color: #1B4F72;
+    border-left: 5px solid #E67E22;
+    padding-left: 10px;
+}
+
+#footer{
+margin-top: 30px;
+background-color:#EFE6D8;
+padding: 5px;
+text-align: center;
+}
