@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h2>Rock, Paper, Scissors!</h2>
+    <p>Choose between Rock, Paper, or Scissors then defeat your opponent!</p>
+
+    <section id="playerName">
+        <label for="fname"> Fisrt Name: </label>
+        <input type="text" id="fname" name="fname">
+        <button onclick="startGame()"> Start Game!</button>
+    </section>
+
+    <h3 id="welcome"></h3>
+    <p id="startDateTime"></p>
+
+    <section id="game">
+        <img id="playerImg" src="images/rock.png" alt="playerImage"> 
+        <img id="computerImg" src="images/rock.png" alt="computerImage"> 
+<p>
+        <h3>Choose your choice: </h3>
+        <button onclick="playRound('rock')"> ROCK!</button>
+        <button onclick="playRound('paper')"> PAPER!</button>
+        <button onclick="playRound('scissors')"> SCISSORS!</button>
+</p>
+    </section>
+
+    <section id="result">
+        <h3>Game Result</h3>
+        <p id="gameResult">Result below :)</p>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Draws: <span id="draws">0</span></p>
+    </section>
+    
+    <section id="history">
+        <h3>Game History</h3>
+        <table id="historyTable">
+            <tr>
+                <th>Round</th>
+                <th>You</th>
+                <th>Computer</th>
+                <th>Result</th>
+            </tr>
+        </table>
+
+        <p id="summary"></p>
+
+        <button onclick="showSummary()">Summary</button>
+        <button onclick="resetGame()">Reset</button>
+    </section>
+
+    <footer>
+        <p id="startTime"> &copy; 2026 Computer Science Club</p>
+    </footer>
+
+    <script src="game.js"></script> 
+</body>
+</html>

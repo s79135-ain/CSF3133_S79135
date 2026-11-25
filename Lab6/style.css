@@ -1,0 +1,84 @@
+
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+/* Section styling */
+section {
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #0000CD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Input styling */
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+/* Image styling */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#playerImg, #computerImg {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* History table styling */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Table header background */
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
