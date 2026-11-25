@@ -63,8 +63,8 @@ if (playerChoice === computerChoice){
 }
 
 //change image according to choice 
-document.getElementById("playerImg").src ="/images" + playerChoice + ".png";
-document.getElementById("computerImg").src ="/images" + computerChoice + ".png";
+document.getElementById("playerImg").src ="/images/" + playerChoice + ".png";
+document.getElementById("computerImg").src ="/images/" + computerChoice + ".png";
 
 //display result
 document.getElementById("gameResult").innerHTML = roundResult;
