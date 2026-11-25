@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Grade Calculator</title>
+
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <h2>Student Grade Calculator</h2>
+
+        <!-- Grade Calculator Form -->
+        <form name="gradeForm" onsubmit="return checkMark()">
+
+            <!-- Student Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name">
+
+            <!-- Student Mark -->
+            <label for="mark">Mark (0-100):</label>
+            <input type="text" id="mark" name="mark"
+                   placeholder="Enter your mark">
+
+            <!-- Form Buttons -->
+            <button type="submit">Check Grade</button>
+
+            <button type="button" onclick="randomMark()">
+                Random Mark
+            </button>
+
+        </form>
+
+        <!-- Display Grade Result -->
+        <p id="result"></p>
+
+        <!-- Display Date and Time -->
+        <p id="checkTime"></p>
+
+        <!-- Grade Table Button -->
+        <button onclick="showTable()">Show Grade Table</button>
+
+        <!-- Grade Table Container -->
+        <div id="tableContainer"></div>
+
+    </div>
+
+    <!-- Link External JavaScript -->
+    <script src="grade.js"></script>
+
+</body>
+</html>
