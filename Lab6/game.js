@@ -63,8 +63,8 @@ if (playerChoice === computerChoice){
 }
 
 //change image according to choice 
-document.getElementById("playerImg").src ="./images/" + playerChoice + ".png";
-document.getElementById("computerImg").src ="./images/" + computerChoice + ".png";
+document.getElementById("playerImg").src ="/images/" + playerChoice + ".png";
+document.getElementById("computerImg").src ="/images/" + computerChoice + ".png";
 
 //display result
 document.getElementById("gameResult").innerHTML = roundResult;
@@ -134,8 +134,8 @@ function resetGame(){
     document.getElementById("welcome").innerHTML = "";
     document.getElementById("startDateTime").innerHTML = "";
 
-    document.getElementById("playerImg").src = "./images/rock.png";
-    document.getElementById("computerImg").src = "./images/rock.png";
+    document.getElementById("playerImg").src = "/images/rock.png";
+    document.getElementById("computerImg").src = "/images/rock.png";
 
     document.getElementById("fname").value = "";
 
